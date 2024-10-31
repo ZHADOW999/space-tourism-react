@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    body{ @apply
+        w-full bg-no-repeat bg-center h-screen
+    }
+}

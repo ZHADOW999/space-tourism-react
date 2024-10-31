@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: bellfair-light;
+    src: url(./fonts/Barlow-Light.ttf);
+
+}
+
+@font-face {
+    font-family: barlow-conLight;
+    src: url(./fonts/BarlowCondensed-Light.ttf);
+
+}
+
+@font-face {
+    font-family: barlow-reg;
+    src: url(./fonts/Bellefair-Regular.ttf);
+}
+
+.nav a:hover::after{
+    opacity: 1;
+    color: rgb(152, 152, 152);
+    cursor: pointer;
+    transition: all .3s ease 0s;
+
+} 
+div .nav a ::after{
+    content: "";
+    height: 4px;
+    width: 10%;
+    background-color: rgb(152, 152, 152);
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    opacity: 1;
+    color: white;
+    transition: all .3s ease 0s;
+    
+} 
+.nav .active::after{
+    content: "";
+    height: 2px;
+    width: 15%;
+    background-color: white;
+    position: absolute;
+    left: 13%;
+    bottom: 0;
+    opacity: 1;
+    color: white;
+    transition: all .3s ease 0s;
+}
+
